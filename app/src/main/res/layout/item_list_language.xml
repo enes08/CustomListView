@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+    <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:gravity="left"
+            android:background="@drawable/shape_border_round_blue"
+
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+            <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:id="@+id/ivLanguage"/>
+
+            <TextView
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/tvLanguageName"
+                    android:layout_margin="5dp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="Enes Başkaya"/>
+
+            <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvDate"
+                    android:textSize="12sp"
+                    android:text="2018-11-26 21:30:30"/>
+
+
+        </LinearLayout>
+
+        <RatingBar
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="3"
+                style="@style/customRatingBar"
+                android:stepSize="1.0"
+                android:id="@+id/rbRating"
+
+        />
+
+        <TextView
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvLanguageDetail"
+                android:textSize="12sp"
+                android:text="2018-11-26 21:30:30"/>
+
+
+    </LinearLayout>
+
+    <View
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@android:color/white"
+    />
+
+
+</LinearLayout>
